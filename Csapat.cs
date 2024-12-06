@@ -23,6 +23,8 @@ namespace NBA_feladat
             HazaiSzin = temp[1];
             IdegenSzin = temp[2];
             AlapitasiEv = DateTime.Parse(temp[3]);
+            Jatekosok = jatekosok.Where(j => j.Csapat.Equals(Nev)).ToList();
+            Edzok = edzok.Where(j => j.Csapat.Equals(Nev)).ToList();
         }
     }
 }
