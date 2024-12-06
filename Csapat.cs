@@ -13,10 +13,10 @@ namespace NBA_feladat
         public string HazaiSzin { get; set; }
         public  string IdegenSzin { get; set; }
         public DateTime AlapitasiEv { get; set; }
-        List<Jatekos> Jatekosok {  get; set; }
-        List<Edzo> Edzok {  get; set; }
+        public List<Jatekos> Jatekosok {  get; set; }
+        public List<Edzo> Edzok {  get; set; }
 
-        public Csapat(string sor)
+        public Csapat(string sor, List<Jatekos> jatekosok, List<Edzo> edzok)
         {
             var temp = sor.Split(';');
             Nev = temp[0];

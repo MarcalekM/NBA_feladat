@@ -17,7 +17,7 @@ namespace NBA_feladat
     
         public Jatekos(string sor)
         {
-            var temp = sor.Split(',');
+            var temp = sor.Split(';');
             Csapat = temp[0];
             Mezszam = temp[1];
             Nev = temp[2];
