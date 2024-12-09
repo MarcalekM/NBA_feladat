@@ -1,0 +1,25 @@
+Golden State Warriors;30;Stephen Curry;PG
+Golden State Warriors;11;Klay Thompson;SG
+Golden State Warriors;23;Draymond Green;PF
+Golden State Warriors;3;Chris Paul;PG
+Golden State Warriors;22; Andrew Wiggins;SF
+Los Angeles Lakers;6;LeBron James;SF
+Los Angeles Lakers;3;Anthony Davis;PF/C
+Los Angeles Lakers;15;Austin Reaves;SG
+Los Angeles Lakers;2;D'Angelo Russell;PG
+Los Angeles Lakers;7;Rui Hachimura;PF
+Boston Celtics;0;Jayson Tatum;SF
+Boston Celtics;7;Jaylen Brown;SG
+Boston Celtics;11;Jrue Holiday;PG
+Boston Celtics;36;Marcus Smart;SG
+Boston Celtics;42;Al Horford;C/PF
+Milwaukee Bucks;34;Giannis Antetokounmpo;PF
+Milwaukee Bucks;6;Damian Lillard;PG
+Milwaukee Bucks;9;Bobby Portis;PF/C
+Milwaukee Bucks;24;Khris Middleton;SF
+Milwaukee Bucks;0;Malik Beasley;SG
+Denver Nuggets;15;Nikola Jokiæ;C
+Denver Nuggets;27;Jamal Murray;PG
+Denver Nuggets;50;Aaron Gordon;PF
+Denver Nuggets;5;Kentavious Caldwell-Pope;SG
+Denver Nuggets;1;Michael Porter Jr.;SF

@@ -1,0 +1,5 @@
+Golden State Warriors;Kék+Sárga;Fehér;1946.1.1
+Los Angeles Lakers;Arany+Lila;Fehér;1947.1.1
+Boston Celtics;Zöld+Fehér;Fehér;1946.1.1
+Milwaukee Bucks;Zöld+Fehér; Fekete;1968.1.1
+Denver Nuggets;Tengerkék,Bordó+Arany;Fehér;1967.1.1
