@@ -10,14 +10,16 @@ namespace NBA_feladat
     {
         public string Csapat {  get; set; }
         public string Nev {  get; set; }
-        public DateTime SzuletesiEv { get; set; }
+        public string SzuletesiEv { get; set; }
+        public string Beosztas {  get; set; } 
 
         public Edzo(string sor)
         {
             var temp = sor.Split(';');
             Csapat = temp[0];
             Nev = temp[1];
-           SzuletesiEv = DateTime.Parse(temp[2]);
+           SzuletesiEv = temp[2];
+            Beosztas = temp[3];
         }
     }
 }

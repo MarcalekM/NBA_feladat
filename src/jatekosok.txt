@@ -8,6 +8,9 @@ Los Angeles Lakers;3;Anthony Davis;PF/C
 Los Angeles Lakers;15;Austin Reaves;SG
 Los Angeles Lakers;2;D'Angelo Russell;PG
 Los Angeles Lakers;7;Rui Hachimura;PF
+Los Angeles Lakers;9;Bronny James;G
+Los Angeles Lakers;10;Christian Koloko;C
+Los Angeles Lakers;24;Kobe Bryant;SG
 Boston Celtics;0;Jayson Tatum;SF
 Boston Celtics;7;Jaylen Brown;SG
 Boston Celtics;11;Jrue Holiday;PG
@@ -23,3 +26,43 @@ Denver Nuggets;27;Jamal Murray;PG
 Denver Nuggets;50;Aaron Gordon;PF
 Denver Nuggets;5;Kentavious Caldwell-Pope;SG
 Denver Nuggets;1;Michael Porter Jr.;SF
+Los Angeles Clippers;1;James Harden;SG
+Los Angeles Clippers;2;Kawhi Leonard;SF
+Los Angeles Clippers;4;Mo Bamba;C
+Los Angeles Clippers;5;Bones Hyland;PG
+Los Angeles Clippers;7;Amir Coffey;SG
+Los Angeles Clippers;8;Kris Dunn;G
+Los Angeles Clippers;14;Terance Mann;SG
+Los Angeles Clippers;17;P.J. Tucker;PF
+Los Angeles Clippers;21;Kobe Brown;G
+Los Angeles Clippers;24;Norman Powell;G
+Chicago Bulls;23;Zach LaVine;SG
+Chicago Bulls;9;DeMar DeRozan;SF
+Chicago Bulls;7;Alex Caruso;PG
+Chicago Bulls;0;Patrick Williams;PF
+Chicago Bulls;2;Coby White;PG
+Chicago Bulls;50;Vucevic Nikola;C
+Dallas Mavericks;77;Luka Donèiæ;PG
+Dallas Mavericks;7;Kyrie Irving;PG
+Dallas Mavericks;25;Josh Green;SG
+Dallas Mavericks;33;Grant Williams;PF
+Dallas Mavericks;5;Derrick Jones Jr.;SF
+Dallas Mavericks;27;Tim Hardaway Jr.;SG
+Philadelphia 76ers;25; James Harden; PG
+Philadelphia 76ers;21; Tyrese Maxey; SG
+Philadelphia 76ers;23; Tobias Harris; SF
+Philadelphia 76ers;3; Joel Embiid; C
+Philadelphia 76ers;8; De'Anthony Melton; SG
+Philadelphia 76ers;7; PJ Tucker; PF
+Toronto Raptors;43; Pascal Siakam; PF
+Toronto Raptors;23; Scottie Barnes; SF
+Toronto Raptors;3; Fred VanVleet; PG
+Toronto Raptors;24; OG Anunoby; SF
+Toronto Raptors;8; Gary Trent Jr.; SG
+Toronto Raptors;9; Jakob Poeltl; C
+Houston Rockets;0; Jalen Green; SG
+Houston Rockets;13; Jabari Smith Jr.; PF
+Houston Rockets;3; Alperen ªengün; C
+Houston Rockets;12; Kevin Porter Jr.; SG
+Houston Rockets;7; Dillon Brooks; SF
+Houston Rockets;31; Fred VanVleet; PG

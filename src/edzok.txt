@@ -1,0 +1,6 @@
+Golden State Warriors;Steve Kerr;1965.9.27;Vezetõ edzõ
+Los Angeles Lakers;JJ Redrick;1984.6.24;Vezetõ edzõ
+Boston Celtics;Joe Mazzulla;1988.6.30;Vezetõ edzõ
+Milwaukee Bucks;Doc Rivers;1961.10.13;Vezetõ edzõ
+Denver Nuggets;Michael Malone;1971.9.15;Vezetõ edzõ
+Los Angeles Clippers;Tyronn Lue;1977.5.3;Vezetõ edzõ

@@ -1,5 +1,11 @@
-Golden State Warriors;Kék+Sárga;Fehér;1946.1.1
-Los Angeles Lakers;Arany+Lila;Fehér;1947.1.1
-Boston Celtics;Zöld+Fehér;Fehér;1946.1.1
-Milwaukee Bucks;Zöld+Fehér; Fekete;1968.1.1
-Denver Nuggets;Tengerkék,Bordó+Arany;Fehér;1967.1.1
+Golden State Warriors;Blue+Yellow;White;1946.1.1
+Los Angeles Lakers;Purple+Gold;White;1947.1.1
+Boston Celtics;Green+White;White;1946.1.1
+Milwaukee Bucks;White+Green;Black;1968.1.1
+Denver Nuggets;Blue;Burgundy+Gold;1967.1.1
+Los Angeles Clippers;White;Red;1984.1.1
+Chicago Bulls;Red+Black; White;1966.1.1
+Dallas Mavericks;Blue+White;Navy blue;1980.1.1
+Philadelphia 76ers;Blue+Red+White;White;1946.1.1
+Toronto Raptors;Black+Red+White;White;1995.1.1
+Houston Rockets;Red+White;Black;1967.1.1
