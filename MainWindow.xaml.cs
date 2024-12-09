@@ -46,38 +46,38 @@ namespace NBA_feladat
 
         private void Csapatok_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            JatekosAdatokFeltoltes();
+
+            EdzoAdatokFeltoltes();
+
+            if (csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Contains('+')) TobbSzinuHatter();
+            else ChangeBackgroundColor(csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin);
+            
+        }
+
+        private void JatekosAdatokFeltoltes()
+        {
             Jatekosok.Items.Clear();
             var jatekosok = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).Single().Jatekosok;
             foreach (var jatekos in jatekosok) Jatekosok.Items.Add(jatekos);
+        }
 
+        private void EdzoAdatokFeltoltes()
+        {
             var edzok = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().Edzok;
             Edzok.Items.Clear();
             foreach (var edzo in edzok) Edzok.Items.Add(edzo);
+        }
 
+        private void TobbSzinuHatter()
+        {
+            if (csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+').Count() < 3)
+                ChangeBackgroundToTwoColors(csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[0],
+                    csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[1]);
 
-            if (csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Contains('+'))
-            {
-                if(csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+').Count() < 3)
-                {
-                    string FirstColor = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[0];
-                    string SecondColor = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[1];
-                    ChangeBackgroundToTwoColors(FirstColor, SecondColor);
-                }
-                else
-                {
-                    string FirstColor = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[0];
-                    string SecondColor = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[1];
-                    string ThirdColor = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[2];
-                    ChangeBackgroundToThreeColors(FirstColor, SecondColor, ThirdColor);
-                }
-                
-            }
-            else
-            {
-                string colorString = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin;
-                ChangeBackgroundColor(colorString);
-            }
-            
+            else ChangeBackgroundToThreeColors(csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[0],
+                        csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[1],
+                        csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[2]);
         }
 
         private void ChangeBackgroundColor(string colorString)
