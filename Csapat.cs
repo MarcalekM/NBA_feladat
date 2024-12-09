@@ -13,16 +13,18 @@ namespace NBA_feladat
         public string HazaiSzin { get; set; }
         public  string IdegenSzin { get; set; }
         public DateTime AlapitasiEv { get; set; }
-        List<Jatekos> jatekosok {  get; set; }
-        List<Edzo> edzok {  get; set; }
+        List<Jatekos> Jatekosok {  get; set; }
+        List<Edzo> Edzok {  get; set; }
 
-        public Csapat(string sor)
+        public Csapat(string sor, List<Jatekos> jatekosok, List<Edzo> edzok)
         {
             var temp = sor.Split(';');
             Nev = temp[0];
             HazaiSzin = temp[1];
             IdegenSzin = temp[2];
             AlapitasiEv = DateTime.Parse(temp[3]);
+            Jatekosok = jatekosok.Where(j => j.Csapat.Equals(Nev)).ToList();
+            Edzok = edzok.Where(j => j.Csapat.Equals(Nev)).ToList();
         }
     }
 }
