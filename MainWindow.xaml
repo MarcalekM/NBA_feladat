@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:NBA_feladat"
         mc:Ignorable="d"
         MinWidth="300"
+        MaxWidth="300"
         MinHeight="600"
+        MaxHeight="600"
         Title="NBA" Height="600" Width="300" Background="White">
     <Grid>
         <Grid.ColumnDefinitions>
