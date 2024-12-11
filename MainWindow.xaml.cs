@@ -149,10 +149,7 @@ namespace NBA_feladat
         private void KepCsere()
         {
             var nev = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).Single().Nev.ToString() + ".jpg";
-            //Logo.Source = new BitmapImage(new Uri($@"C:\Users\Ny19MarcalekM\Source\Repos\MarcalekM\NBA_feladat\Images\{nev}"));
-
-            Uri resourceUri = new Uri($"/Images/{nev}", UriKind.Relative);
-            Logo.Source = new BitmapImage(resourceUri);
+            Logo.Source = new BitmapImage(new Uri($@"C:\Users\Ny19MarcalekM\Source\Repos\MarcalekM\NBA_feladat\Images\{nev}"));
         }
     }
 }
