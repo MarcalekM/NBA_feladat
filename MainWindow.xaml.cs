@@ -40,7 +40,7 @@ namespace NBA_feladat
                 encoding: Encoding.UTF8);
             while (!sr3.EndOfStream) csapatok.Add(new(sr3.ReadLine(), jatekosok, edzok));
 
-            foreach(var csapat in csapatok) Csapatok.Items.Add(csapat.Nev);
+            foreach(var csapat in csapatok.OrderBy(cs => cs.Nev)) Csapatok.Items.Add(csapat.Nev);
             Csapatok.SelectedItem = Csapatok.Items[0];
         }
 
@@ -52,6 +52,8 @@ namespace NBA_feladat
 
             if (csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Contains('+')) TobbSzinuHatter();
             else ChangeBackgroundColor(csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin);
+
+            KepCsere();
             
         }
 
@@ -61,14 +63,12 @@ namespace NBA_feladat
             var jatekosok = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).Single().Jatekosok;
             foreach (var jatekos in jatekosok) Jatekosok.Items.Add(jatekos);
         }
-
         private void EdzoAdatokFeltoltes()
         {
             var edzok = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().Edzok;
             Edzok.Items.Clear();
             foreach (var edzo in edzok) Edzok.Items.Add(edzo);
         }
-
         private void TobbSzinuHatter()
         {
             if (csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+').Count() < 3)
@@ -79,7 +79,6 @@ namespace NBA_feladat
                         csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[1],
                         csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).First().HazaiSzin.Split('+')[2]);
         }
-
         private void ChangeBackgroundColor(string colorString)
         {
             try
@@ -145,6 +144,15 @@ namespace NBA_feladat
             {
                 MessageBox.Show($"Error setting gradient: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void KepCsere()
+        {
+            var nev = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).Single().Nev.ToString() + ".jpg";
+            //Logo.Source = new BitmapImage(new Uri($@"C:\Users\Ny19MarcalekM\Source\Repos\MarcalekM\NBA_feladat\Images\{nev}"));
+
+            Uri resourceUri = new Uri($"/Images/{nev}", UriKind.Relative);
+            Logo.Source = new BitmapImage(resourceUri);
         }
     }
 }
