@@ -145,11 +145,11 @@ namespace NBA_feladat
                 MessageBox.Show($"Error setting gradient: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private void KepCsere()
         {
             var nev = csapatok.Where(cs => cs.Nev.Equals(Csapatok.SelectedValue)).Single().Nev.ToString() + ".jpg";
-            Logo.Source = new BitmapImage(new Uri($@"C:\Users\Ny19MarcalekM\Source\Repos\MarcalekM\NBA_feladat\Images\{nev}"));
+            string path = Directory.GetCurrentDirectory().ToString().Replace("\\bin\\Debug\\net8.0-windows", "");
+            Logo.Source = new BitmapImage(new Uri($@"{path}\Images\{nev}"));
         }
     }
 }
